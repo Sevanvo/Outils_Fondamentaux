@@ -96,7 +96,7 @@ def est_premier(n):
 ##print("-7 :", est_premier(-7))
 ##n = 1_000_003
 ##print("Temps d'exécution :", duree(est_premier, n), "secondes")
-# Elle s'arrête à la racine carré de n
+# Nous avons vérifié que 1 n’est pas premier, que 2 est bien premier et que les nombres négatifs ne sont pas premiers. Nous avons également constaté qu’une boucle jusqu’à la racine carrée de (n) est beaucoup plus rapide qu’une boucle jusqu’à (n). Pour 1 000 003, cette optimisation réduit fortement le nombre de vérifications. Nous retenons qu’il faut tester plusieurs cas particuliers et choisir un algorithme efficace.
 #Ex4.1
 
 def crible(limite):
