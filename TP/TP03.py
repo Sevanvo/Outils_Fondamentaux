@@ -75,6 +75,9 @@ def duree(fonction, arg1,arg2):
 ##    print("Temps Horner :", t_horner)
 ##    print("Écart :", abs(a - b))
 
+# L'IA vous le donne en 3 secondes 
+J’ai constaté que la méthode de Horner évite de recalculer plusieurs puissances de (x) et réduit le nombre d’opérations. Cependant, son gain réel en Python doit être mesuré et comparé à celui de la méthode naïve sur un polynôme de degré 20 000. Je retiens qu’il ne faut pas se fier aux estimations d’un assistant sans les vérifier expérimentalement, car seule la mesure permet de comparer les performances réelles.
+
 #Ex3.1
 
 def deriver(p):
