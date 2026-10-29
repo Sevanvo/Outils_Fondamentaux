@@ -324,8 +324,10 @@ def dedans(P, polygone):
 
 maison = [(0, 0), (2, 0), (2, 2), (1, 3), (0, 2)]
 
-print("Test a la hauteur du sommet :")
-print("Resultat :", dedans((1, 1.5), maison))
+##print("Test a la hauteur du sommet :")
+##print("Resultat :", dedans((1, 1.5), maison))
+
+##L’IA m’a proposé la méthode du lancer de rayon pour déterminer si un point se trouve dans un polygone. J’ai appris que cette méthode peut rencontrer des problèmes dans les cas limites, notamment lorsqu’un point se trouve exactement à la hauteur d’un sommet ou sur un côté. Je retiens qu’il faut vérifier les inégalités utilisées pour éviter de compter deux fois un même sommet et tester les situations particulières pour rendre le code fiable.
 
 print("\nTest sur le cote inferieur :")
 print("Resultat :", dedans((1, 0), maison))
