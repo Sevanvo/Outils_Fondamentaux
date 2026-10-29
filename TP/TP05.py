@@ -156,7 +156,8 @@ cle_b = 8
 message_chiffre = chiffrement_affine(message_original, cle_a, cle_b)
 message_dechiffre = dechiffrement_affine(message_chiffre, cle_a, cle_b)
 
-## Cette version vérifie que le coefficient a possède un inverse modulo 26 avant de chiffrer ou de déchiffrer. Nous avons constaté que cette vérification est nécessaire pour pouvoir retrouver le message initial. Les tests permettent de vérifier que le déchiffrement fonctionne.
+## Cette version vérifie que le coefficient a possède un inverse modulo 26 avant de chiffrer ou de déchiffrer. Cette vérification est nécessaire pour pouvoir retrouver le message initial. Les tests permettent de vérifier que le déchiffrement fonctionne.
+##Le code de chiffrement affine proposé par l’IA fonctionne, mais il ne vérifie pas nécessairement si la clé est valide. Avec (a=4) et un modulo de 26, le chiffrement n’est pas inversible, car le PGCD de 4 et 26 vaut 2. Il faut donc vérifier que le PGCD de (a) et de 26 vaut 1 et refuser les clés qui ne respectent pas cette condition.
 # Affichage des résultats
 ##print(f"Message d'origine : {message_original}")
 ##print(f"Message chiffré   : {message_chiffre}")
