@@ -171,7 +171,7 @@ b = H @ x_vrai               # et on fabrique le second membre correspondant
 
 # L'IA vous le donne en 3 secondes
 ##Il utilise np.linalg.solve(A, b), il dit que c'est préférable  car c'est plus rapide, plus efficace et concue pour calculer la solution exacte d'un systeme carré bien passé
-
+##J’ai appris que les deux méthodes peuvent fonctionner, mais que numpy.linalg.solve(A, b) est préférable, car elle est généralement plus efficace et plus stable numériquement. Je retiens qu’il faut poser des questions précises à l’IA pour obtenir les bonnes recommandations et ne pas se contenter de sa première réponse
 #Ex6.1
 import matplotlib.pyplot as plt
 
