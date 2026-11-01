@@ -23,7 +23,16 @@ Pour cela, j’ai choisi de me concentrer sur une question plus précise : **com
 ## Étape 2
 J’ai  étudié le nombre de nombres premiers présents dans des intervalles successifs de 100 nombres, jusqu’à 1 000 000. Par exemple, j’ai compté les nombres premiers entre 1 et 100, puis entre 101 et 200, et ainsi de suite.
 
-Pour chaque groupe de 100 nombres, j’ai comparé le nombre de nombres premiers réellement trouvés grâce à l'ordinateur à une estimation mathématique. Cette estimation repose sur le logarithme népérien : elle consiste à diviser la taille de l’intervalle par le logarithme de son milieu.
-J’ai ensuite comparé les résultats réels et les estimations à l’aide d’un graphique. J’ai également calculé des moyennes et un écart-type afin de mieux étudier les différences entre les valeurs obtenues.
+Pour chaque intervalle, j’ai comparé le nombre de nombres premiers réellement trouvés par l’ordinateur à deux estimations mathématiques. La première formule consiste à diviser la taille de l’intervalle par le logarithme népérien de son milieu. Elle utilise donc la valeur située au centre de l’intervalle pour estimer combien de nombres premiers il contient.
 
-Cette étape permet d’observer si la formule donne une estimation proche du nombre réel de nombres premiers, même si elle ne permet pas nécessairement de prévoir exactement leur nombre dans chaque groupe.
+La deuxième formule repose sur la fonction n/ln(n). Elle estime le nombre de nombres premiers jusqu’à la borne supérieure, puis soustrait l’estimation jusqu’à la borne inférieure. La différence obtenue sert à estimer le nombre de nombres premiers présents dans l’intervalle.
+
+Pour ces formules,  je me suis appuyé sur le théorème des nombres premiers et son approximation présentés sur le site du NIST
+
+En calculant les moyennes de tous les résultats, j’ai obtenu 7,848 nombres premiers par intervalle en réalité, contre 7,861 avec la première formule et 7,237 avec la deuxième. La première formule donne donc une moyenne plus proche du nombre réellement observé dans cette expérience.
+
+J’ai également calculé l’écart-type des nombres premiers observés, qui vaut 2,036, et l’ai comparé à celui d’un modèle de hasard pur, égal à 2,691. L’écart-type mesure la dispersion des valeurs autour de leur moyenne. Les nombres premiers observés varient donc moins que dans ce modèle de comparaison.
+
+L’estimation est très proche de la moyenne réelle pour les intervalles de 100 nombres. Mais est-ce toujours le cas lorsque l’on change la taille des intervalles ?
+
+## Étape 3
