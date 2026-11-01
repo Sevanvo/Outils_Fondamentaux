@@ -36,3 +36,4 @@ J’ai également calculé l’écart-type des nombres premiers observés, qui v
 L’estimation est très proche de la moyenne réelle pour les intervalles de 100 nombres. Mais est-ce toujours le cas lorsque l’on change la taille des intervalles ?
 
 ## Étape 3
+Comme on a 
