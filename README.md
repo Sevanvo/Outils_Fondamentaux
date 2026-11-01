@@ -10,7 +10,7 @@ S1C2
 
 Cette question m’a paru intéressante, et ce projet va nous permettre d’étudier ce phénomène plus en détail.
 
-Pour cela, j’ai choisi de me concentrer sur une question plus précise : **comment estimer le nombre de nombres premiers dans un intervalle et évaluer la précision de cette estimation ?**
+Pour cela, j’ai choisi de me concentrer sur une question plus précise : comment estimer le nombre de nombres premiers dans un intervalle et évaluer la précision de cette estimation ?
 
 ## Étape 1
 J'ai comparé deux méthodes pour obtenir le nombre de nombres premiers jusqu'à une limite. La méthode naïve teste les diviseurs possibles de chaque nombre afin de déterminer s’il est premier. La deuxième méthode élimine progressivement les multiples des nombres premiers afin de conserver uniquement les nombres premiers.
