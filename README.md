@@ -1,7 +1,7 @@
 # Outils_Fondamentaux
 
-Projet individuel 
-Sevan VOVILIER
+Projet individuel\
+Sevan VOVILIER\
 S1C2
 # Étude sur la répartition des nombres premiers
 
@@ -36,4 +36,4 @@ J’ai également calculé l’écart-type des nombres premiers observés, qui v
 L’estimation est très proche de la moyenne réelle pour les intervalles de 100 nombres. Mais est-ce toujours le cas lorsque l’on change la taille des intervalles ?
 
 ## Étape 3
-Comme on a 
+Comme j'ai déjà travaillé sur le nombre de nombres premiers jusqu'à 1 000 000, j'ai choisi de me concentrer sur  l’étude des nombres compris entre 100 000 et 10 000 000, en testant des intervalles de tailles différentes, allant de 1 à 1 000 000.
