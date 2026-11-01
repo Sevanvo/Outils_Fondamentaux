@@ -10,4 +10,4 @@ Cette question m’a paru intéressante, et ce projet va nous permettre d’étu
 
 Pour cela, j’ai choisi de me concentrer sur une question plus précise : comment estimer le nombre de nombres premiers dans un intervalle et évaluer la précision de cette estimation ?
 
-# Étape 1
+## Étape 1
